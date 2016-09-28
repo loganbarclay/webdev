@@ -9,7 +9,7 @@
 #greenbody {
 	background-color: #8CD73E;
 }
-div#fixedheader {
+#fixedheader {
 	position:fixed;
 	top:0px;
 	left:0px;
@@ -18,7 +18,7 @@ div#fixedheader {
 	background:#333;
 	padding:20px;
 }
-div#fixedfooter {
+#fixedfooter {
 	position:fixed;
 	bottom:0px;
 	left:0px;
