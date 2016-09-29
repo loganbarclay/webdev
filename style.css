@@ -18,6 +18,15 @@
 	background:#8CD73E;
 	padding:20px;
 }
+.header {
+       position: absolute;
+       right: 0;
+       top: 0;
+       left: 0;
+       padding: 1rem;
+       background-color: #efefef;
+       text-align: center;
+}
 .footer {
       position: absolute;
       right: 0;
