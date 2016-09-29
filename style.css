@@ -53,12 +53,12 @@
 }
 ul {
 	    text-align: right;
-	        list-style: none;
+	        list-style-type: none;
 		    margin-top: -35px;
 }
 
 ul li {
-	    display: inline-block;
+	    display: inline;
 	        padding-left: 10px;
 }
 
