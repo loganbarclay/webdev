@@ -44,33 +44,32 @@
       background: linear-gradient(#8CD73E, #EFEFEF); /* Standard syntax (must be last) */
       text-align: center;
 }
-#startlinks {
-   margin-top: 100px;
-   color: white;
-   font-family: "Arial", "Arial", "Sans-serif";
-   text-decoration: none;
-   text-align: center;
-}
 ul {
 	    display: inline;
 	    text-align: right;
-	        list-style-type: none;
-		    margin-top: -35px;
+	    list-style-type: none;
+	    margin-top: -35px;
 }
 
 ul li {
 	    
 	    float: left;
-	        padding-left: 10px;
+	    padding-left: 10px;
 }
 
 ul li: last-child{
 	    padding-right: 10px;
 }
 
-.right {
+.left {
 	position: absolute;
         left: 0px;
 	width: 300px;
         background-color: #b0e0e6;
+}
+.right {
+	position:relative;
+        right 0px;
+	width: 100.px;
+
 }
