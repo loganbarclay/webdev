@@ -62,13 +62,13 @@ ul li: last-child{
 }
 
 .left {
-	position: absolute;
+	position: relative;
         left: 0px;
 	width: 300px;
         background-color: #b0e0e6;
 }
 .right {
-	position:absolute;
+	position: relative;
         right 0px;
 	width: 100.px;
 
