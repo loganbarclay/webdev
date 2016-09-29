@@ -68,7 +68,7 @@ ul li: last-child{
         background-color: #b0e0e6;
 }
 .right {
-	position:relative;
+	position:absolute;
         right 0px;
 	width: 100.px;
 
