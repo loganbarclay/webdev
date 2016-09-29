@@ -53,6 +53,7 @@
 }
 ul {
 	    text-align: right;
+	    vertical-align: bottom;
 	        list-style-type: none;
 		    margin-top: -35px;
 }
