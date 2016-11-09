@@ -2,15 +2,6 @@
 #greenbody {
 	background-color: #8CD73E;
 }
-
-
-
-
-
-
-
-
-
 .header {
        position: absolute;
        right: 0;
@@ -62,7 +53,7 @@ ul li: last-child{
 }
 .right {
 	position: relative;
-        right 0px;
+        right 200px;
 	width: 100.px;
 
 }
