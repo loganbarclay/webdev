@@ -4,7 +4,7 @@ require_once("./include/fg_membersite.php");
 $fgmembersite = new FGMembersite();
 
 //Provide your site name here
-$fgmembersite->SetWebsiteName('https://still-ridge-55348.herokuapp.com/');
+$fgmembersite->SetWebsiteName(‘Bikes2Boards:wq’);
 
 //Provide the email address where you want to get notifications
 $fgmembersite->SetAdminEmail(‘bogusbasinsucks@gmail.com’);
