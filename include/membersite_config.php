@@ -16,7 +16,7 @@ $fgmembersite->SetAdminEmail(‘bogusbasinsucks@gmail.com’);
 $fgmembersite->InitDB(/*hostname*/'localhost',
                       /*username*/‘root’,
                       /*password*/‘root’,
-                      /*database name*/‘users’,
+                      /*database name*/‘tables’,
                       /*table name*/‘customers’);
 
 //For better security. Get a random string from this link: http://tinyurl.com/randstr
