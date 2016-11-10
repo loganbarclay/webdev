@@ -1,7 +1,9 @@
 <?php
 
 var_dump($_POST);
-$uname = $psw = "";
+
+$uname = $_POST['uname']; 
+$psw = $_POST['psw'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$uname = test_input($_POST["uname"]);
