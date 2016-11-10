@@ -16,7 +16,7 @@ if(strlen($psw) <= 0 || strlen($uname) > 40) {
 ?>
 <?php
 if($valid == true) {
-	header('Location: home.html');
+	header('Location: index.php');
 }
 else {
 	header('Location: start.html');
