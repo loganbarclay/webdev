@@ -14,18 +14,6 @@ if(strlen($psw) <= 0 || strlen($uname) > 40) {
 
 ?>
  
-
-
-
-
-
-
-
-
-
-
-
-
 <p>Username: <?= htmlspecialchars($uname) ?></p>
 <?php if(isset($unameError))  { ?>
 	<span id= "unameError" class="error"><?= $unameError ?> </span>
@@ -36,16 +24,6 @@ if(strlen($psw) <= 0 || strlen($uname) > 40) {
 	<span id= "unameError" class="error"><?= $unameError ?> </span>
 <?php  } ?>
 
-<?php
-// if valid, redirect to page
-if($valid == true) {
-	header(*Location: index.php;
-}	
-
-// in not vaild, redirect to form
-
-
-?>
 
 
 
