@@ -1,8 +1,13 @@
 <?php
+session_start();
+?>
+
+<?php
 
 $uname = $_POST['uname']; 
 $psw = $_POST['psw'];
 $valid = true;
+
 
 if(strlen($uname) <= 0 || strlen($uname) > 40) {
 	$unameError = "Username is required.  Must be less than 40 characters.";
@@ -19,6 +24,7 @@ if($valid == true) {
 	header('Location: index.php');
 }
 else {
+	$_SESSION['valid'] = $valid;
 	header('Location: start.html');
 }
 ?>
