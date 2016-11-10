@@ -5,24 +5,30 @@ var_dump($_POST);
 $uname = $_POST['uname']; 
 $psw = $_POST['psw'];
 
-
+if(strlen($uname) <= 0 || strlen($uname) > 40 {
+	$unameError = "Username is required.  Must be less than 40 characters."
+}
 
 ?>
 
-<p>User name: <?= $uname?><p>
-<p> Password: <?= $psw?><p>
+<p>User name: <?= htmlspecialchars($uname)?><p>
+<?php if(isset($unameError))  { ?>
+	<span id= "unameError" class="error"><?= $unameError ?> </span>
+<?php  } ?>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$uname = test_input($_POST["uname"]);
-	$psw = test_input($_POST["psw"]);
-}
-
-function test_input($data){
-	$data = trim($data);
-	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
-	return $data;
-}
+<p> Password: <?= htmlspecialchars($psw)?><p>
 
 
-?>
+
+
+
+
+
+
+
+
+
+
+
+
+
