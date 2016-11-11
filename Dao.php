@@ -8,7 +8,7 @@ class Dao
     {
 	    private $host ="localhost";
 	    private $dbname = "webdev";
-	    private $user = "admin";
+	    private $user = "root";
 	    private $password = "root";
 	/**
 	* Creates a new PDO connection and returns the handle.
@@ -36,7 +36,19 @@ class Dao
 	// then we can use a query instead of a prepared statement.
 	return $conn->query("SELECT * FROM test");
 	}
+	public function userExists($uname)
+	{
+		$conn = $this->getConnection();
+		$stmt = $conn->prepare("SELECT * FROM users WHERE email =:email");
+		$stmt->bindParam(':email', $uname);
+		$stmt->execute();
 
+		if($stmt->fetch()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 	/**
 	* Returns rows with email column equal to the given email.
 	* Accepts user input.
