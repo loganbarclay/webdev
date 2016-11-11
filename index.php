@@ -3,7 +3,6 @@ session_start();
 var_dump($_SESSION);
 ?>
 
-<?php include_once( "start.html" ); ?>
 <?php include_once( "rentals.html" ); ?>
 <?php include_once( "home.html" ); ?>
 <?php include_once( "sales.html" ); ?>

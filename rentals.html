@@ -13,12 +13,43 @@
   
                            <div class="ul">
                               <img src="images/Bikes2Boardsblue.png" alt="Logo">
-                               <ul class="right"><a href="start.html">START</a>
-                                <ul class="right"><a href="home.html">HOME</a>
+                               
+                                <ul class="right"><a href="index.php">HOME</a>
                                  <ul class="right"><a href="repairs.html">REPAIRS</a>
                                   <ul class="right"><a href="rentals.html">RENTALS</a>
                                    <ul class="right"><a href="sales.html">SALES</a>
 	                            <ul class="right"><a href="contact.html">CONTACT</a>
+
+<!-- Button to open the modal login form -->
+        <button class="right" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" 
+         class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" method="POST" action="action_page.php">
+        <div class="imgcontainer">
+           <img src="images/img_avatar2.png" alt="avatar" class="avatar">
+        </div>
+        
+        <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Login</button>
+        <input type="checkbox" checked="checked"> Remember me
+        </div>
+        
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+
 	                           </div>
 	                      </div>
 	                       <div class="footer">footer things!!
